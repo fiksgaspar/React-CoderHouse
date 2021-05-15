@@ -1,0 +1,9 @@
+.contenedor {
+  width: 100%;
+  background-image: url("https://res.cloudinary.com/gpope/image/upload/v1619103540/carrusel%20NewCloset/jose-antonio-gallego-vazquez-5OVg_K23sdw-unsplash_gps0ck.jpg");
+  height: 405px;
+  background-color: black;
+  background-position: center;
+  mask-repeat: no-repeat;
+  padding-top: 150px;
+}

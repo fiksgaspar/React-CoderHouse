@@ -1,0 +1,61 @@
+.detalle--item{
+    position: flex;
+    overflow: hidden;
+    background-color: #dee1e6;  
+    border-radius: 20px;
+    padding-top: 50px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    padding-top: 10px
+}
+
+.tarjeta--title{
+    font-size: 32px;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+
+.tarjeta--descr{
+    display: flex;
+    justify-content: space-evenly;
+}
+.tarjeta--descr-pr{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+}
+.tarjeta--img{
+    width:300px
+}
+.tarjeta--info{
+    font-size: 15px;
+}
+
+.terminar-compra{
+    display: flex;
+    justify-content: center;
+}
+
+.btn-terminar-compra{
+    padding: 8px 20px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    font-size:18px;
+    color: #fff;
+    cursor:pointer;
+    background-color:#1888ff;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.btn-terminar-compra:hover{
+    padding:6px 18px;
+    transition: all 0.8s ease-out;
+    background-color: transparent;
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid #1888ff
+}

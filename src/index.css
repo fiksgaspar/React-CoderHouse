@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@300&display=swap');
+
+*{
+    font-family: 'Sora', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+.logoNewCloset{
+    margin-left: -250px;
+}
+
+.Carrito{
+    font-size: 28px;
+}
+
+.signin{
+    margin-right:-250px
+}
+
+.grilla--productos{
+    position: relative;
+    height: calc(100% - 15vh);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    padding: 10px 25px;
+    background-color: #c4c8cf;
+    padding-top: 20px;
+    padding-bottom: 150px;
+    overflow: hidden;
+    
+}
+
+
+
+.ofertas{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 200px;
+    
+    
+}

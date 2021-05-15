@@ -1,0 +1,28 @@
+.footer-area{
+    width: 100%;
+    height: 400px;
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: space-evenly;
+
+    bottom: 0;
+}
+.footer-area > div {
+    margin-top: 80px;
+}
+.footer-area > div > p {
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer-logo{
+    margin-top: 30px !important
+}
+h3{
+    color: #1888ff;
+}
+a{
+    text-decoration: none;
+    color: white;
+}

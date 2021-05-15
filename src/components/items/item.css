@@ -1,0 +1,41 @@
+.tarjeta{
+    position: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 500px;
+    width: 100%;
+    overflow: hidden;
+    padding: 10px 25px;
+    background-color: #dee1e6;  
+    border-radius: 20px;
+}
+
+.tarjeta--info{
+    font-size: smaller;
+    font-weight: bold;
+    padding-top: 20px;
+
+}
+
+.tarjeta--price {
+    margin-top:5px;
+    padding-bottom:20px;
+    padding-left:300px;
+}
+.tarjeta--title{
+    font-size: 10px;
+}
+.imagenes {
+    width: 250px;
+    height: 250px;
+   justify-content: center;
+
+}
+.div--imagenes{
+    display: flex;
+    justify-content: center;
+}
+.div--info{
+    display: flex;
+    justify-content: center;
+}

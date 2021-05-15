@@ -1,0 +1,98 @@
+.img--compras{
+    width: 100px;
+    border-radius: 15px;
+}
+.contenedor{
+    display: flex;
+    flex-direction: column;
+}
+.contenedor--compras{
+    margin-left: 150px;
+    margin-top: 50px;
+    
+}
+
+.tabla--compras{
+    border: 1px solid black;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    width: 900px;
+}
+
+.cart--title{
+    color: black !important
+}
+
+.btn--compra{
+    padding: 6px 15px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    font-size:13px;
+    color: #fff;
+    cursor:pointer;
+    background-color: #1888ff;
+}
+
+.btn--compra:hover{
+    padding:3px 12px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(105, 37, 37);
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid rgb(105, 37, 37)
+}
+
+.totales--compra{
+    display: flex;
+    justify-content: space-evenly;
+    padding-bottom: 30px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.boton--borrarTodo{
+    padding: 6px 15px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    font-size:13px;
+    color: #fff;
+    cursor:pointer;
+    background-color: #1888ff;
+}
+
+.boton--borrarTodo:hover{
+    padding:3px 12px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(105, 37, 37);
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid rgb(105, 37, 37)
+}
+
+.checkout{
+    display: flex;
+    justify-content: center;
+}
+
+.checkout--compra{
+    padding: 6px 15px;
+    border-radius: 4px;
+    outline: none;
+    border:none;
+    font-size:17px;
+    color: #fff;
+    cursor:pointer;
+    background-color: #c23636;
+    margin-bottom: 30px;
+}
+
+.checkout--compra:hover{
+    padding:15px 22px;
+    transition: all 0.3s ease-out;
+    background-color: rgb(31, 180, 56);
+    color: #fff;
+    border-radius: 4px;
+    border: 2px solid rgb(31, 180, 56)
+}
