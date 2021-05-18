@@ -3,25 +3,25 @@ import CountContainer from '../../container/CountContainer'
 import './itemdetail.css'
 import {Link} from 'react-router-dom'
 
-const ItemDetailComp = ({id, title, price, img, description, stock, onAdd, cambioBoton}) => {
+const ItemDetailComp = ({item, onAdd, cambioBoton}) => {
     return (
-             <div key={id} className="detalle--item">
+             <div key={item.id} className="detalle--item">
 
-               <p className="tarjeta--title"><b>{title}</b></p>
+               <p className="tarjeta--title"><b>{item.title}</b></p>
                <div className="tarjeta--descr">
-                 <img className="tarjeta--img" src={img} alt="*"></img>
+                 <img className="tarjeta--img" src={item.imag} alt="*"></img>
                    <div className="tarjeta--descr-pr">
-                   <p className="tarjeta--info">{description}</p>
+                   <p className="tarjeta--info">{item.description}</p>
                    <p className="tarjeta--price">  
                         <strong>$</strong>
-                        <strong>{price}</strong>
+                        <strong>{item.price}</strong>
                     </p>
                 </div> 
 
              </div>
 
                 <div className="tarjeta--contador">
-                   {cambioBoton ?  <CountContainer id={id} stock={stock} onAdd={onAdd}/> : <Link to={"/cart"}><div className="terminar-compra"><button className="btn-terminar-compra">Terminar Compra</button></div></Link> }
+                   {cambioBoton ?  <CountContainer id={item.id} stock={item.stockActual} onAdd={onAdd}/> : <div className="terminar-compra"><Link to={"/cart"}><button className="btn-terminar-compra">Terminar Compra</button></Link></div> }
                 </div>
                 
                 

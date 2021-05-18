@@ -3,22 +3,26 @@
 export const NavbarMenuItems = [
     
     {
-        title: 'T-shirts',
-        path: '/T-shirts',
+        title: 'Remeras',
+        path: '/category/Remeras',
         cName: 'dropdown-link'
     },
     {
-        title: 'Jeans',
-        path: '/Jeans',
+        title: 'Pantalones',
+        path: '/category/Pantalones',
         cName: 'dropdown-link'
     },
     {
-        title: 'Hoodies',
-        path: '/Hoodies',
+        title: 'Abrigos',
+        path: '/category/Abrigos',
         cName: 'dropdown-link'
     },{
-        title: 'Accesories',
-        path: '/Accesories',
+        title: 'Accesorios',
+        path: '/category/Accesorios',
+        cName: 'dropdown-link'
+    },{
+        title: 'Zapatos',
+        path: '/category/Zapatos',
         cName: 'dropdown-link'
     }
 ]
