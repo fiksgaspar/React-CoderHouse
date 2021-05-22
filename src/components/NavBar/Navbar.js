@@ -45,7 +45,7 @@ export const Navbar = () => {
                     </li>
                     <li className="nav-item" onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
                         <Link to="/products" className="nav-links" onClick={closeMobileMenu}>
-                            Products <i className="fas fa-caret-down"></i>
+                            Productos <i className="fas fa-caret-down"></i>
                         </Link>
                         {dropdown && <Dropdown />}
                     </li>

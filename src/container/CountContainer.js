@@ -26,7 +26,7 @@ const CountContainer = ({stock, onAdd, id}) => {
 
         setStockLater(0);
       }
-      else if(stockTotal > 0 ){
+      else if(stockTotal >= 0 ){
       setStockLater ( stockLater - 1);
       setStockTotal (stockTotal + 1)
 

@@ -4,12 +4,13 @@ import {Navbar} from './components/NavBar/Navbar';
 import {BrowserRouter, Switch, Route} from "react-router-dom"
 import { ItemListContainer } from "./container/ItemListContainer";
 import ItemDetailContainer from './container/ItemDetailContainer'
-import Ofertas from "./components/Ofertas";
+import Ofertas from "./components/ofertas/Ofertas";
 import Cart from "./components/Cart/Cart";
-import Signin from "./components/Signin";
+import Signin from "./components/signin/Signin";
 import Footer from "./components/Footer/Footer"
 import Banner from "./components/banner/Banner";
 import {CartProvider} from './Context/CartContext'
+import Checkout from "./components/checkout/Checkout";
 
 function App() {
   return (
@@ -24,15 +25,17 @@ function App() {
           <ItemDetailContainer /> 
         </Route>
         <Route exact path='/products'>
-          <Ofertas /> 
+          <ItemListContainer /> 
         </Route>
         <Route exact path='/on-sale'>
           <Ofertas /> 
+          <ItemListContainer /> 
         </Route>
         <Route exact path='/Cart'>
           <Cart /> 
+          <Checkout />
         </Route>
-        <Route exact path='/Sign-up'>
+        <Route exact path='/sign-up'>
           <Signin /> 
         </Route>
         <Route path='/'>

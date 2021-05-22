@@ -1,3 +1,4 @@
+
 .img--compras{
     width: 100px;
     border-radius: 15px;
@@ -103,6 +104,8 @@
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    background-color:  #c4c8cf ; 
+   
 
 }
 
@@ -119,14 +122,13 @@
 }
 
 .contenedor-carrito{
-    border: 1px solid black;
     padding: 100px;
     border-radius: 20px;
     align-items: center;
     justify-content: space-around;
     display: flex;
     flex-direction: column;
-    background-color: #f1f5fc;
+    background-color: #dee1e6;
 }
 
 .vacio{

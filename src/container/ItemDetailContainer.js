@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {useParams } from 'react-router-dom';
 import ItemDetailComp from '../components/items/ItemDetailComp';
-// import ItemDetails from '../components/items/ItemDetails'
 import { useCartContext } from '../Context/CartContext';
 import { getFirestore } from '../firebase';
 import './detail.css'

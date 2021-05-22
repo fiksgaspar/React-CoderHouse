@@ -1,16 +1,17 @@
 # Primer Aplicacion de React por Gaspar Fernandez Fiks
 
-Estudiante de la camada 16045 de React en CoderHouse. Primer proyecto e-commerce.
+Estudiante de la camada 16045 de React en CoderHouse. Primer proyecto e-commerce de un local de ropa. 
 
 ## Descripción
 
-Existen varias maneras de poder utilizar este codigo para ver la app. Se puede hacer Fork desde gitHub y clonar el repo a uno propio. 
+Durante el curso hemos visto como iniciar un proyecto de React desde cero hasta terminar teniendo un ecommerce funcional y conectado a una base de datos en [Firebase](https://firebase.google.com/). 
+Hemos visto react-router-dom y su metodo de ruteo, useState, useParams, useContext y por último también como optimizar nuestro código.
+
 
 ### Uso
 
-Una vez con el repo en tu poder, ve a la carpeta donde has guardado el repo e inicializa el estado de npm. 
-```bash
- npm run start 
-```
+1. Forkeá el repo de [GitHub](https://github.com/fiksgaspar) 
+2. Inicia tu editor de código, abre la carpeta donde guardaste el repo e inicializa npm con ` npm install  `
+3. Una vez que ya hayas realizado los pasos anteriores solo te queda inicializar el proyecto en tu browser con `npm run start`
 
 

@@ -21,7 +21,7 @@ const ItemDetailComp = ({item, onAdd, cambioBoton}) => {
              </div>
 
                 <div className="tarjeta--contador">
-                   {cambioBoton ?  <CountContainer id={item.id} stock={item.stockActual} onAdd={onAdd}/> : <div className="terminar-compra"><Link to={"/cart"}><button className="btn-terminar-compra">Terminar Compra</button></Link></div> }
+                   {cambioBoton ?  <CountContainer id={item.id} stock={item.stockActual} onAdd={onAdd}/> : <div className="terminar-compra"><Link to={"/cart"}><button className="btn-terminar-compra">Terminar Compra</button></Link><Link to={"/"}><button className="btn-terminar-compra">Seguir comprando</button></Link></div> }
                 </div>
                 
                 

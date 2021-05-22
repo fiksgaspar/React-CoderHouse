@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import ItemList from '../components/items/ItemList'
 import {useParams} from 'react-router-dom'
-import Item from '../components/items/Item';
+
 
 
 import {getFirestore} from '../firebase'
@@ -47,7 +47,7 @@ export const ItemListContainer = () => {
 
     return (  
         <div  className="grilla--productos">
-          <ItemList productos={datos}/> 
+          {datos == 0 ? <img className="loader" src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif"></img> : <ItemList productos={datos}/> }
         </div>
           
         )

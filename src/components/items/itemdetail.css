@@ -50,6 +50,8 @@
     background-color:#1888ff;
     margin-top: 50px;
     margin-bottom: 50px;
+    margin-left: 3px;
+    margin-right: 3px;
 }
 .btn-terminar-compra:hover{
     padding:6px 18px;
