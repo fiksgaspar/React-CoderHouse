@@ -1,4 +1,62 @@
+.checkout-full{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 100%;
+    background-color:#c4c8cf;  
+    ;
+}
+
 .checkout-box{
-    height: 400px;
-    width: 600px;
+ display: flex;
+ justify-content: space-between;
+ padding: 40px;
+ border: 1px solid none;
+ background-color: #dee1e6;
+ border-radius: 15px;
+ height: 330px;
+ width: 80%;
+}
+
+.form-group{
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    font-size: 23px;
+}
+.labell{
+    margin-right: 15px;
+}
+.finales{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.form-google{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+}
+
+.Termina{
+    font-size: 40px;
+}
+
+.termina-box{
+    padding: 35px;
+    border:1 px solid none;
+    background-color:#dee1e6;
+    border-radius: 15px ;
+}
+
+.termina-p{
+    font-size: 20px;
+    padding-top: 15px;
 }

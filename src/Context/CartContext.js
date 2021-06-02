@@ -56,7 +56,6 @@ export function CartProvider ({children}){
     const  removeItem = (item) => {
          const itemRemove = cart.filter( x => x.id !== item)
          setCart(itemRemove)
-        console.log(item)
     }
 
     const clearItems = () => setCart([])

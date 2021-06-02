@@ -10,7 +10,7 @@ const CountContainer = ({stock, onAdd, id}) => {
     const count = stockLater;
    
     useEffect(() => {
-      console.log(stockLater)
+    
     }, [stockTotal,stockLater])
     
     

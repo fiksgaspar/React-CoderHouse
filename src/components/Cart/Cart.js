@@ -1,11 +1,23 @@
-import React from 'react'
+import React, {useEffect, useContext} from 'react'
 import { Link } from 'react-router-dom';
 import {useCartContext} from '../../Context/CartContext'
 import './cart.css'
+import {getFirestore} from '../../firebase'
+import firebase from 'firebase/app'
+import {user, UserContext} from '../../Context/UserProvider'
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 const Cart = () => {
 
     const {cart, removeItem, clearItems, preciototal} = useCartContext();
+
+
+    useEffect(()=>{
+
+    },[cart])
+
 
     if(cart == 0){
         return(
@@ -21,6 +33,9 @@ const Cart = () => {
             </div> 
         )
     }
+
+
+    const notify = () => toast("Gracias por tu compra!")
 
     return (
 
@@ -43,7 +58,7 @@ const Cart = () => {
                             <th><Link  className="cart--title" to={`/item/${x.id}`}>{x.title}</Link></th>
                             <th>$ {x.price}</th>
                             <th>{x.cantidad}</th>
-                            <th>Total</th>
+                            <th>{x.cantidad * x.price}</th>
                             <th><button className="btn--compra" onClick={() => removeItem(x.id)}>Remover</button></th>
                         </tr>
                         
@@ -58,8 +73,10 @@ const Cart = () => {
                 <button className="boton--borrarTodo" onClick={clearItems}>Borrar todo</button>
             </div>
             <div className="checkout">
-                <button  className="checkout--compra"><a href="/">Checkout</a></button>
+                <Link to="/Checkout"><button  className="checkout--compra" onClick={notify}>Checkout</button></Link>
+                <ToastContainer />
             </div>
+
         </div>
          
     )   

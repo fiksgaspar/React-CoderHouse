@@ -1,15 +1,19 @@
-import React, {useState} from 'react'
+import React, {useState, useContext, useEffect} from 'react'
  import CartWidget from './CartWidget'
  import {Link} from "react-router-dom"
 import '../../index.css'
 import './navbar.css'
 import Dropdown from './Dropdown'
 import ButtonSign from './ButtonSign'
+import { CartContext } from '../../Context/CartContext'
+import { UserContext } from '../../Context/UserProvider'
+import { auth, logOut, signInWithMail } from '../../firebase'
 
 
 
 
 export const Navbar = () => {
+    const {user, inicioSesion} = useContext(UserContext)
     const [click, setClick] = useState(false);
     const [dropdown, setDropdown] = useState(false)
     const handleClick = () => setClick(!click);
@@ -29,7 +33,7 @@ export const Navbar = () => {
             setDropdown(false)
         }
     }
-
+  
 
     return (
        
@@ -56,7 +60,9 @@ export const Navbar = () => {
                         <Link to="/on-sale" className="nav-links" onClick={closeMobileMenu}>ON SALE</Link>
                     </li>
                     <li className="nav-item">
-                        <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>Sign Up</Link>
+                       {!user==null ? <div><button type="button" className="nav-links-mobile" onClick={logOut}>Log Out</button><span>Hola {user.displayName}</span></div>
+                       :
+                       <Link to="/sign-up" className="nav-links-mobile" onClick={closeMobileMenu}>Sign Up</Link>} 
                     </li>
                 </ul>
                 <ButtonSign />

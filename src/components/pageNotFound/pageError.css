@@ -1,0 +1,8 @@
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.foto-error{
+    width: 800px;
+}

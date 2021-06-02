@@ -47,7 +47,7 @@ export const ItemListContainer = () => {
 
     return (  
         <div  className="grilla--productos">
-          {datos == 0 ? <img className="loader" src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif"></img> : <ItemList productos={datos}/> }
+          {datos === 0 ? <img className="loader" src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif" alt="loader"></img> : <ItemList productos={datos}/> }
         </div>
           
         )

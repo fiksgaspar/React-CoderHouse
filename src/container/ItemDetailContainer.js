@@ -14,7 +14,7 @@ const ItemDetailContainer = () => {
     const [cambioBoton, setCambioBoton] = useState(true)
 
     useEffect(() => {
-        console.log(item)
+        
         const db = getFirestore()
 
         const itemCollection = db.collection("items")
@@ -30,7 +30,7 @@ const ItemDetailContainer = () => {
         .finally(()=> console.log('La carga finalizo'))
   
     },[id])
-    console.log(item)
+    
 
     const onAdd = (count) => {
         addItems(count, item)
@@ -41,7 +41,7 @@ const ItemDetailContainer = () => {
     return (
         <>
         <div>
-            {item != {} ? <ItemDetailComp item={item} onAdd={onAdd} cambioBoton={cambioBoton}/>: <img className="loader" src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif"></img> }  
+            {item !== {} ? <ItemDetailComp item={item} onAdd={onAdd} cambioBoton={cambioBoton}/>: <img className="loader" src="https://media.giphy.com/media/xTkcEQACH24SMPxIQg/giphy.gif" alt="loader"></img> }  
                  
         </div>
         </>

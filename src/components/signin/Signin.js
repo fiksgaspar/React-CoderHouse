@@ -1,18 +1,21 @@
-import React from 'react'
+import React, {useContext}  from 'react'
 import './signin.css'
+import GoogleSign from './GoogleSign'
+import { UserContext } from '../../Context/UserProvider'
+import { logOut } from '../../firebase'
+import { Link } from 'react-router-dom'
 
 const Signin = () => {
-    return (
- 
-            <div className="form-login">
-                <h5>Logueate</h5>
-                <input className="form-controls" type="text" placeholder="Usuario "></input>   
-                <input className="form-controls" type="pasword" placeholder="Contraseña "></input>  
-                <input className="form-button" type="submit" name="" value="Ingresar"></input>
-                <p><a href="">¿Olvidaste tu contraseña?</a></p> 
+    const {user,inicioSesion} = useContext(UserContext)
 
+
+    return (
+        <div className="SignIn">
+            <div className="signIn-box">
+              {user? <button className="btn-LogOut" type="button" onClick={logOut}>Log Out</button> : <Link to ="/"> <GoogleSign/></Link> }
             </div>
-    )
-}
+        </div>
+     
+    )}
 
 export default Signin
