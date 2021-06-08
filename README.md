@@ -2,7 +2,7 @@
 
 Estudiante de la camada 16045 de React en CoderHouse. Primer proyecto e-commerce de un local de ropa. 
 
-![](NewCloset.gif)
+![Alt Text](NewCloset.gif)
 
 ## Descripción
 
