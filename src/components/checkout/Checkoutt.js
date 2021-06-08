@@ -3,7 +3,7 @@ import { useCartContext } from '../../Context/CartContext'
 import { UserContext } from '../../Context/UserProvider'
 import './checkout.css'
 import GoogleSign from '../signin/GoogleSign'
-import { Link, useHistory } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 import Order from '../Order'
 
 function Checkoutt({onNameChange, onSubmit, orderId, mensajeMail, isDisabled, status}) {

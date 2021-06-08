@@ -2,6 +2,8 @@
 
 Estudiante de la camada 16045 de React en CoderHouse. Primer proyecto e-commerce de un local de ropa. 
 
+![](NewCloset.gif)
+
 ## Descripción
 
 Durante el curso hemos visto como iniciar un proyecto de React desde cero hasta terminar teniendo un ecommerce funcional y conectado a una base de datos en [Firebase](https://firebase.google.com/). 

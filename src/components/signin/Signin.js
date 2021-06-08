@@ -6,7 +6,7 @@ import { logOut } from '../../firebase'
 import { Link } from 'react-router-dom'
 
 const Signin = () => {
-    const {user,inicioSesion} = useContext(UserContext)
+    const {user} = useContext(UserContext)
 
 
     return (
